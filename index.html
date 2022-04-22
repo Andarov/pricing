@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing component</title>
+
+    <!-- CSS-FILES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    
+    <div class="container">
+        <!-- PRICING -->
+        <main class="pricing">
+            <h2 class="pricing-header">Our Pricing</h2>
+
+            <!-- FORM -->
+            <form class="form" action="https://htmlacademy.ru" method="GET">
+                <input class="input-anually visually-hidden" type="radio" id="anually" name="pricing" value="anually">
+                <input class="input-monthly visually-hidden" type="radio" id="monthly" name="pricing" value="monthly" checked   >
+                <label class="label label-annually" for="anually">Annually</label>
+                <!-- CONTROLLER -->
+                <div class="controll">
+                  <div class="controller"></div>
+                  <label class="control-annually" for="anually"></label> 
+                  <label class="control-monthly" for="monthly"></label>
+                </div>
+                <label class="label label-monthly" for="monthly">Monthly</label>
+            </form>
+
+            <!-- PRICING-BOXES -->
+            <div class="pricing-boxes">
+
+                <div class="pricing-box">
+                    <h3 class="pricing-box-heading">Basic</h3>
+                    <div class="pricing-box-price">
+                        <span class="pricing-box-price-mark">$</span>
+                        <span class="pricing-box-price-number number-basic">19.99</span>
+                    </div>
+                    <div class="pricing-box-components">
+                        <span class="pricing-box-component">500 GB Storage</span>
+                        <span class="pricing-box-component">2 Users Allowed</span>
+                        <span class="pricing-box-component">Send up to 3 GB</span>
+                    </div>
+                    <button class="main-button">LEARN MORE</button>
+                </div>
+
+                <div class="pricing-box pricing-box-active">
+                    <h3 class="pricing-box-heading">Professional</h3>
+                    <div class="pricing-box-price">
+                        <span class="pricing-box-price-mark pricing-box-price-mark-active">$</span>
+                        <span class="pricing-box-price-number pricing-box-price-number-active number-prof">24.99</span>
+                    </div>
+                    <div class="pricing-box-components">
+                        <span class="pricing-box-component pricing-box-component-active">1 TB Storage</span>
+                        <span class="pricing-box-component pricing-box-component-active">5 Users Allowed</span>
+                        <span class="pricing-box-component pricing-box-component-active">Send up to 10 GB</span>
+                    </div>
+                    <button class="main-button main-button-active">LEARN MORE</button>
+                </div>
+
+                <div class="pricing-box pricing-box-third">
+                    <h3 class="pricing-box-heading">Master</h3>
+                    <div class="pricing-box-price">
+                        <span class="pricing-box-price-mark">$</span>
+                        <span class="pricing-box-price-number number-master">39.99</span>
+                    </div>
+                    <div class="pricing-box-components">
+                        <span class="pricing-box-component">2 TB Storage</span>
+                        <span class="pricing-box-component">10 Users Allowed</span>
+                        <span class="pricing-box-component">Send up to 20 GB</span>
+                    </div>
+                    <button class="main-button">LEARN MORE</button>
+                </div>
+                
+            </div>
+        </main> 
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
