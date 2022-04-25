@@ -133,7 +133,7 @@ h2, h3 {
     transition: transform 0.4s ease;
 }
 
-.control-anually,
+.control-annually,
 .control-monthly {
     position: absolute;
     top: 0;
@@ -143,13 +143,13 @@ h2, h3 {
     cursor: pointer;
 }
 
-.input-anually:checked ~ .controll .control-monthly,
-.input-monthly:checked ~ .controll .control-anually {
+.input-annually:checked ~ .controll .control-monthly,
+.input-monthly:checked ~ .controll .control-annually {
     z-index: 5;
 }
 
 
-.input-anually:checked ~ .controll .controller {
+.input-annually:checked ~ .controll .controller {
     transform: translateX(-100%);
 }
 
