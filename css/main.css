@@ -204,7 +204,16 @@ h2, h3 {
 }
 
 .pricing-box-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+.pricing-box-price-active {
+    border-bottom: 1px solid var(--box-bg-color);
 }
 
 .pricing-box-price-mark {
@@ -235,7 +244,7 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 32px 0;
+    padding-bottom: 32px;
 }
 
 .pricing-box-component {
