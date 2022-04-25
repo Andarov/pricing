@@ -29,8 +29,12 @@
 }
 
 *:focus {
-    outline: 4px dashed #ff7500;
+    outline: 3px dashed var(--box-bg-color-active);
     outline-offset: 2px;
+}
+
+.main-button-active:focus {
+    outline: 3px dashed var(--box-bg-color)
 }
 
 .visually-hidden {
@@ -96,7 +100,7 @@ h2, h3 {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .form {
@@ -209,11 +213,11 @@ h2, h3 {
     align-items: center;
     text-align: center;
     padding-bottom: 32px;
-    border-bottom: 1px solid var(--main-text-color);
+    border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
 
 .pricing-box-price-active {
-    border-bottom: 1px solid var(--box-bg-color);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.25);
 }
 
 .pricing-box-price-mark {
@@ -249,11 +253,11 @@ h2, h3 {
 
 .pricing-box-component {
     padding: 12px 0;
-    border-bottom: 1px solid var(--main-text-color);
+    border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
 
 .pricing-box-component-active {
-    border-bottom: 1px solid var(--main-text-color-active);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.25);
 }
 
 .main-button {
@@ -263,6 +267,8 @@ h2, h3 {
     color: var(--main-text-color-active);
     border: 1px solid transparent;
     border-radius: 6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
     transition: background-color 0.5s ease,
     color 0.5s ease,
     background-image 0.5s ease,
