@@ -7,9 +7,9 @@
     <title>Pricing component</title>
 
     <!-- CSS-FILES -->
-    <!-- <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css"> -->
-    <link rel="stylesheet" href="css/mini.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/mini.css"> -->
 
 </head>
 <body>
@@ -18,63 +18,63 @@
     <div class="container">
         <!-- PRICING -->
         <main class="pricing">
-            <h2 class="pricing-header">Our Pricing</h2>
+            <h2 class="pricing__header">Our Pricing</h2>
 
             <!-- FORM -->
             <form class="form" action="https://htmlacademy.ru" method="GET">
-                <input class="input-annually visually-hidden" type="radio" id="anually" name="pricing" value="anually">
-                <input class="input-monthly visually-hidden" type="radio" id="monthly" name="pricing" value="monthly" checked   >
-                <label class="label label-annually" for="anually">Annually</label>
-                <!-- CONTROLLER -->
-                <div class="controll">
-                  <div class="controller"></div>
-                  <label class="control-annually" for="anually"></label> 
-                  <label class="control-monthly" for="monthly"></label>
+                <input class="form__input-annually visually-hidden" type="radio" id="anually" name="pricing" value="anually">
+                <input class="form__input-monthly visually-hidden" type="radio" id="monthly" name="pricing" value="monthly" checked   >
+                <label class="form__label form__label-annually" for="anually">Annually</label>
+                <!-- form__CONTROLLER -->
+                <div class="form__controll">
+                  <div class="form__controller"></div>
+                  <label class="form__control-annually" for="anually"></label> 
+                  <label class="form__control-monthly" for="monthly"></label>
                 </div>
-                <label class="label label-monthly" for="monthly">Monthly</label>
+                <label class="form__label-monthly" for="monthly">Monthly</label>
             </form>
 
-            <!-- PRICING-BOXES -->
-            <div class="pricing-boxes">
+            <!-- PRICING__BOXES -->
+            <div class="pricing__boxes">
 
-                <div class="pricing-box">
-                    <h3 class="pricing-box-heading">Basic</h3>
-                    <div class="pricing-box-price">
-                        <span class="pricing-box-price-mark">$</span>
-                        <span class="pricing-box-price-number number-basic">19.99</span>
+                <div class="pricing__box">
+                    <h3 class="pricing__box-heading">Basic</h3>
+                    <div class="pricing__box-price box-price">
+                        <span class="pricing__box-price-mark">$</span>
+                        <span class="pricing__box-price-number number-basic">19.99</span>
                     </div>
-                    <div class="pricing-box-components">
-                        <span class="pricing-box-component">500 GB Storage</span>
-                        <span class="pricing-box-component">2 Users Allowed</span>
-                        <span class="pricing-box-component">Send up to 3 GB</span>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component">500 GB Storage</span>
+                        <span class="pricing__box-component">2 Users Allowed</span>
+                        <span class="pricing__box-component">Send up to 3 GB</span>
                     </div>
                     <button class="main-button">Learn more</button>
                 </div>
 
-                <div class="pricing-box pricing-box-active">
-                    <h3 class="pricing-box-heading">Professional</h3>
-                    <div class="pricing-box-price pricing-box-price-active">
-                        <span class="pricing-box-price-mark pricing-box-price-mark-active">$</span>
-                        <span class="pricing-box-price-number pricing-box-price-number-active number-prof">24.99</span>
+                <div class="pricing__box pricing__box--active">
+                    <h3 class="pricing__box-heading">Professional</h3>
+                    <div class="pricing__box-price pricing__box-price--active">
+                        <span class="pricing__box-price-mark pricing__box-price-mark--active">$</span>
+                        <span class="pricing__box-price-number pricing__box-price-number--active number-prof">24.99</span>
                     </div>
-                    <div class="pricing-box-components">
-                        <span class="pricing-box-component pricing-box-component-active">1 TB Storage</span>
-                        <span class="pricing-box-component pricing-box-component-active">5 Users Allowed</span>
-                        <span class="pricing-box-component pricing-box-component-active">Send up to 10 GB</span>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component pricing__box-component---active">1 TB Storage</span>
+                        <span class="pricing__box-component pricing__box-component--active">5 Users Allowed</span>
+                        <span class="pricing__box-component pricing__box-component--active">Send up to 10 GB</span>
                     </div>
-                    <button class="main-button main-button-active">Learn more</button>
+                    <button class="main-button main-button--active">Learn more</button>
                 </div>
 
-                <div class="pricing-box pricing-box-third">
-                    <h3 class="pricing-box-heading">Master</h3>
-                    <div class="pricing-box-price">
-                        <span class="pricing-box-price-mark">$</span>
-                        <span class="pricing-box-price-number number-master">39.99</span>
+                <div class="pricing__box pricing__box-third">
+                    <h3 class="pricing__box-heading">Master</h3>
+                    <div class="pricing__box-price">
+                        <span class="pricing__box-price-mark">$</span>
+                        <span class="pricing__box-price-number number-master">39.99</span>
                     </div>
-                    <div class="pricing-box-components">
-                        <span class="pricing-box-component">2 TB Storage</span>
-                        <span class="pricing-box-component">10 Users Allowed</span>
-                        <span class="pricing-box-component">Send up to 20 GB</span>
+                    <div class="pricing__box-components">
+                        <span class="pricing__box-component">2 TB Storage</span>
+                        <span class="pricing__box-component">10 Users Allowed</span>
+                        <span class="pricing__box-component">Send up to 20 GB</span>
                     </div>
                     <button class="main-button">Learn more</button>
                 </div>

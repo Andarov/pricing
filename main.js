@@ -2,11 +2,11 @@ const elBasic = document.querySelector(".number-basic");
 const elProf = document.querySelector(".number-prof");
 const elMaster = document.querySelector(".number-master");
 
-const elAnnually = document.querySelector(".label-annually");
-const elMonthly = document.querySelector(".label-monthly");
+const elAnnually = document.querySelector(".form__label-annually");
+const elMonthly = document.querySelector(".form__label-monthly");
 
-const elAnnuallyLabel = document.querySelector(".control-annually");
-const elMonthlyLabel = document.querySelector(".control-monthly");
+const elAnnuallyLabel = document.querySelector(".form__control-annually");
+const elMonthlyLabel = document.querySelector(".form__control-monthly");
 
 
 elMonthly.addEventListener("click", function() {

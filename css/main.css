@@ -33,7 +33,7 @@
     outline-offset: 2px;
 }
 
-.main-button-active:focus {
+.main-button--active:focus {
     outline: 3px dashed var(--box-bg-color)
 }
 
@@ -96,7 +96,7 @@ h2, h3 {
     padding: 71px 0 103px;
 }
 
-.pricing-header {
+.pricing__header {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
@@ -110,7 +110,7 @@ h2, h3 {
     margin-bottom: 65px;
 }
 
-.controll {
+.form__controll {
     position: relative;
     width: 56px;
     height: 32px;
@@ -123,12 +123,12 @@ h2, h3 {
     margin-left: 24px;
 }
 
-.controll:hover {
+.form__controll:hover {
     background-image: none;
     background-color: #979797;
 }
 
-.controller {
+.form__controller {
     margin-left: 24px;
     width: 24px;
     height: 24px;
@@ -137,8 +137,8 @@ h2, h3 {
     transition: transform 0.4s ease;
 }
 
-.control-annually,
-.control-monthly {
+.form__control-annually,
+.form__control-monthly {
     position: absolute;
     top: 0;
     left: 0;
@@ -147,21 +147,21 @@ h2, h3 {
     cursor: pointer;
 }
 
-.input-annually:checked ~ .controll .control-monthly,
-.input-monthly:checked ~ .controll .control-annually {
+.form__input-annually:checked ~ .form__controll .form__control-monthly,
+.form__input-monthly:checked ~ .form__controll .form__control-annually {
     z-index: 5;
 }
 
 
-.input-annually:checked ~ .controll .controller {
+.form__input-annually:checked ~ .form__controll .form__controller {
     transform: translateX(-100%);
 }
 
-.control-annually:checked .controller {
+.form__control-annually:checked .form__controller {
     transform: translateX(-100%);
 }
 
-.label {
+.form__label {
     font-size: 15px;
     line-height: 28px;
     text-align: right;
@@ -172,17 +172,17 @@ h2, h3 {
     transition: color 0.4s ease;
 }
 
-.label:hover {
+.form__label:hover {
     color: #6e728e;
 }
 
-/* PRICING-BOXES */
-.pricing-boxes {
+/* PRICING__BOXES */
+.pricing__boxes {
     display: flex;
     align-items: center;
 }
 
-.pricing-box {
+.pricing__box {
     width: 350px;
     padding: 31px;
     border-radius: 10px 0px 0px 10px;
@@ -190,24 +190,24 @@ h2, h3 {
     box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
 
-.pricing-box-active {
+.pricing__box--active {
     border-radius: 10px;
     padding: 55px 31px;
     color: var(--main-text-color-active);
     background-image: linear-gradient(135.06deg, #A2A7F0 -0.05%, #696EDD 100.05%);
 }
 
-.pricing-box-third {
+.pricing__box-third {
     border-radius: 0px 10px 10px 0px;
 }
 
-.pricing-box-heading {
+.pricing__box-heading {
     font-size: 18px;
     text-align: center;
     margin-bottom: 24px;
 }
 
-.pricing-box-price {
+.pricing__box-price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,11 +216,11 @@ h2, h3 {
     border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
 
-.pricing-box-price-active {
+.pricing__box-price--active {
     border-bottom: 1px solid rgb(255, 255, 255, 0.25);
 }
 
-.pricing-box-price-mark {
+.pricing__box-price-mark {
     font-size: 40px;
     line-height: 49px;
     text-align: center;
@@ -229,34 +229,34 @@ h2, h3 {
     margin-right: 8px;
 }
 
-.pricing-box-price-mark-active {
+.pricing__box-price-mark--active {
     color: var(--main-text-color-active);
 }
 
-.pricing-box-price-number {
+.pricing__box-price-number {
     font-size: 72px;
     line-height: 71px;
     letter-spacing: -2.16px;
     color: #4A4D60;
 }
 
-.pricing-box-price-number-active {
+.pricing__box-price-number--active {
     color: var(--main-text-color-active);
 }
 
-.pricing-box-components {
+.pricing__box-components {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 32px;
 }
 
-.pricing-box-component {
+.pricing__box-component {
     padding: 12px 0;
     border-bottom: 1px solid rgba(110, 114, 142, 0.25);
 }
 
-.pricing-box-component-active {
+.pricing__box-component--active {
     border-bottom: 1px solid rgb(255, 255, 255, 0.25);
 }
 
@@ -282,14 +282,14 @@ h2, h3 {
     color: var(--main-btn-hover);
 }
 
-.main-button-active {
+.main-button--active {
     background-image: none;
     background-color: var(--box-bg-color);
     color: #6d72de;
     border: 1px solid transparent;
 }
 
-.main-button-active:hover {
+.main-button--active:hover {
     background-color: transparent;
     color: var(--box-bg-color);
     border: 1px solid var(--box-bg-color);
