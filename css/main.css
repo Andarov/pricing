@@ -294,3 +294,39 @@ h2, h3 {
     color: var(--box-bg-color);
     border: 1px solid var(--box-bg-color);
 }
+
+@media only screen and (max-width:1100px) {
+    .pricing__boxes {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: -24px;
+    }
+
+    .pricing__box {
+        width: 800px;
+        margin-bottom: 24px;
+        border-radius: 10px;
+    }
+
+    .pricing__box--active {
+        padding: 31px;
+    }
+}
+
+@media only screen and (max-width:840px) {
+    .pricing__box {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .pricing__box {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width:365px) {
+    .pricing__box {
+        width: 325px;
+    }
+}
