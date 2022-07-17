@@ -303,7 +303,7 @@ h2, h3 {
     }
 
     .pricing__box {
-        width: 800px;
+        width: 100%;
         margin-bottom: 24px;
         border-radius: 10px;
     }
@@ -313,20 +313,20 @@ h2, h3 {
     }
 }
 
-@media only screen and (max-width:840px) {
-    .pricing__box {
-        width: 600px;
+@media only screen and (max-width:450px) {
+    .pricing {
+        padding: 50px 0;
     }
-}
 
-@media only screen and (max-width:500px) {
-    .pricing__box {
-        width: 380px;
+    .pricing__header {
+        margin-bottom: 30px;
     }
-}
 
-@media only screen and (max-width:365px) {
-    .pricing__box {
-        width: 325px;
+    .form {
+        margin-bottom: 30px;
+    }
+
+    .pricing__box-price-number {
+        font-size: 56px;
     }
 }
